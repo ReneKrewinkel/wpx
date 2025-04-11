@@ -28,7 +28,7 @@
     "build-storybook": "storybook build",
     "token": "json-to-scss ./src/resources/design/tokens.json ./src/resources/styles/tokens/_tokens.scss",
     "scss": "sass ./src/resources/styles/main.scss ./src/resources/styles/main.css",
-    "server": "json-server --watch ./data/people.json --port 3001 --delay 2000"
+    "server": "json-server --watch ./data/people.json --port 999"
   },
   "eslintConfig": {
     "extends": [
