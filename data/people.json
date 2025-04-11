@@ -1,0 +1,77 @@
+{
+  "people": [
+    {
+      "name": "Amber Venemop",
+      "avatar": {
+        "initials": "AV",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "André Hoopbergen",
+      "avatar": {
+        "initials": "AH",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Anna Romkemaas",
+      "avatar": {
+        "initials": "AR",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Bas Verduren",
+      "avatar": {
+        "initials": "BV",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Berend Hoogland",
+      "avatar": {
+        "initials": "BH",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Bianca Steenhogen",
+      "avatar": {
+        "initials": "BS",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Bob Westervoort",
+      "avatar": {
+        "initials": "BW",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Cecilia Uitsen",
+      "avatar": {
+        "initials": "CU",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/1407617f2f2a2744a60fedf17c0a9064585643ce?placeholderIfAbsent=true",
+        "statusColor": "rgba(33, 200, 130, 1)"
+      }
+    },
+    {
+      "name": "Demi Verhaaf",
+      "avatar": {
+        "initials": "DV",
+        "statusIcon": "https://cdn.builder.io/api/v1/image/assets/b6c46d09599a4a31a02df716ba81292d/57aec05094ade151acfb326afdfa253bd9a39e04?placeholderIfAbsent=true",
+        "statusColor": "rgba(153, 226, 196, 1)"
+      }
+    }
+  ]
+}
+
