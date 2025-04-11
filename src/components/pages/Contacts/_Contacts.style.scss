@@ -1,6 +1,8 @@
 .Contacts {
 
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   // XS - Phone
   @media (max-width: 480px) {

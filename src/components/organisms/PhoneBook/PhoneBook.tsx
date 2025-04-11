@@ -7,18 +7,20 @@ import {ContactList} from "../../molecules";
 
 const PhoneBook = ({testID, style, type, size, props }:PhoneBookInterface) => {
 
-    const { data, isLoaded, error } = useFetch("http://localhost:999/people")
-    const [ filtered, setFiltered ]= useState(data);
+    const {  data, isLoaded, error } = useFetch("http://localhost:999/people")
+    const [ filtered, setFiltered ]= useState(data)
 
-  useEffect( () => setFiltered(data), [data])
+    const [searchTerm, setSearchTerm] = useState("")
 
-    const handleSearch = (searchTerm: string) => {
+    useEffect( () => setFiltered(data), [data])
+
+    const handleSearch = (st: string) => {
+      setSearchTerm(st )
       const result = data.filter((contact: any) => {
-        return contact.name.toLowerCase().includes(searchTerm.toLowerCase())
-       || contact.avatar.initials.toLowerCase().includes(searchTerm.toLowerCase())
+        return contact?.name?.toLowerCase().includes(st.toLowerCase())
+       || contact.avatar.initials.toLowerCase().includes(st.toLowerCase())
       })
       setFiltered(result);
-
     }
 
     return(
@@ -26,8 +28,9 @@ const PhoneBook = ({testID, style, type, size, props }:PhoneBookInterface) => {
              data-object-type={ type ?? ""}
              className={ `PhoneBook` }>
             <h2>Phonebook</h2>
-            <SearchInput handler={handleSearch}/>
-            <ContactList data={filtered} />
+            <SearchInput handler={handleSearch} value={searchTerm}/>
+          { isLoaded &&<ContactList data={filtered} /> }
+          { error && <div>{error}</div> }
         </div>
     )
 

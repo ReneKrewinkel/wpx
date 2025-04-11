@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { SearchInputInterface } from './SearchInput.interface'
 
-const SearchInput = ({testID, handler }:SearchInputInterface) => {
+const SearchInput = ({testID, handler, value ="" }:SearchInputInterface) => {
 
-    const [inputValue, setInputValue] = useState<string>("")
 
 
     const handleChange = (value: string) => {
-        setInputValue(value)
+        // setInputValue(value)
         if(handler) {
             handler(value)
         }
@@ -19,7 +18,7 @@ const SearchInput = ({testID, handler }:SearchInputInterface) => {
             <input type="text"
                        onChange={(e) => handleChange(e.target.value)}
                        placeholder="Search..."
-                       value={inputValue}/>
+                       value={value}/>
         </div>
     )
 

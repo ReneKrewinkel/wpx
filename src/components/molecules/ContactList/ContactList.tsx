@@ -1,8 +1,13 @@
-// import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import { ContactListInterface } from './ContactList.interface'
 import ContactItem from "../ContactItem";
 
+import { ContactContext } from "../../../context"
+
 const ContactList = ({testID, data }:ContactListInterface) => {
+
+    const ctx: any = useContext(ContactContext)
+
 
     return(
         <div data-testid={ testID }
@@ -10,7 +15,9 @@ const ContactList = ({testID, data }:ContactListInterface) => {
             {
                 data && data.map( (contact, index) => {
                       return (
-                        <ContactItem key={index} item={contact} />
+                        <div key={index} onClick={() => ctx.addToList(contact)}>
+                            <ContactItem  item={contact} />
+                        </div>
                       )
                   })
             }
